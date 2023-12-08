@@ -1,0 +1,50 @@
+*{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.outer {
+    height: 240px;
+    width: 240px;
+    display: grid;
+    grid-template-areas: 
+    'first second'
+    'third forth';
+    grid-gap: 10px;
+}
+.outer>div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    box-shadow: 2px 2px  black;
+    border-radius: 13px;
+}
+.first{
+    grid-area: first;
+    background-color: red;
+    opacity: 0.5;
+
+}
+.second{
+    grid-area: second;
+    background-color: green;
+    opacity: 0.5;
+}
+.third{
+    grid-area: third;
+    background-color: yellow;
+    opacity: 0.5;
+}
+.forth{
+    grid-area: forth;
+    background-color: lightblue;
+    opacity: 0.5;
+}
+
+.flash{
+    opacity: 1;
+}
+
+.redflash{
+    background-color: red;
+}
